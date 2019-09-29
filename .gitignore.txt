@@ -1,0 +1,2 @@
+.\TestNG Report
+.\Gradle Report

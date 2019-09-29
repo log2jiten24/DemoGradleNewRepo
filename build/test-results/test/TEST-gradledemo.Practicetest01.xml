@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gradledemo.Practicetest01" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-09-29T19:20:52" hostname="DESKTOP-E1E9EHH" time="15.398">
+  <properties/>
+  <testcase name="openurl" classname="gradledemo.Practicetest01" time="1.833"/>
+  <testcase name="clickurl" classname="gradledemo.Practicetest01" time="5.729"/>
+  <testcase name="clickonelement" classname="gradledemo.Practicetest01" time="7.833"/>
+  <system-out><![CDATA[Screenshots taken
+Screenshot captured while opening google page
+driver title capture :Google
+Screenshots taken
+Screenshot captured while typing testing
+Screenshots taken
+Screenshot captured while typing testing
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
