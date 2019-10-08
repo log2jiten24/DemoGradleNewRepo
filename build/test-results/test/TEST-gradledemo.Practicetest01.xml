@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="gradledemo.Practicetest01" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-09-29T19:20:52" hostname="DESKTOP-E1E9EHH" time="15.398">
+<testsuite name="gradledemo.Practicetest01" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-01T18:46:49" hostname="DESKTOP-E1E9EHH" time="16.24">
   <properties/>
-  <testcase name="openurl" classname="gradledemo.Practicetest01" time="1.833"/>
-  <testcase name="clickurl" classname="gradledemo.Practicetest01" time="5.729"/>
-  <testcase name="clickonelement" classname="gradledemo.Practicetest01" time="7.833"/>
+  <testcase name="openurl" classname="gradledemo.Practicetest01" time="2.023"/>
+  <testcase name="clickurl" classname="gradledemo.Practicetest01" time="5.7"/>
+  <testcase name="clickonelement" classname="gradledemo.Practicetest01" time="8.516"/>
   <system-out><![CDATA[Screenshots taken
 Screenshot captured while opening google page
 driver title capture :Google

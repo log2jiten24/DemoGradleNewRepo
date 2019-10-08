@@ -4,14 +4,19 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -29,15 +34,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-//import com.aventstack.extentreports.ExtentReports;
-//import com.aventstack.extentreports.ExtentTest;
-//import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.google.common.io.Files;
-
 
 public class Reusablefunctions {
 	
 	public static WebDriver driver ;
+	
+	
 	//public static ExtentReports report;
 	//public  static ExtentTest logger ;
 
@@ -50,7 +52,9 @@ public class Reusablefunctions {
 		File src = ts.getScreenshotAs(OutputType.FILE) ;
 		//store the source file into the destination
 		
-		Files.copy(src, new File("./Screenshots/+ "+screenshotname+".png"));
+		//Files.copy(src, new File("./Screenshots/+ "+screenshotname+".png"));
+		FileUtils.copyFile(src, new File("./Screenshots/+ "+screenshotname+".png"));
+		
 		
 		System.out.println ("Screenshots taken");
 		} catch (Exception e) 
@@ -342,6 +346,9 @@ public class Reusablefunctions {
 	    	driver.get(url);
 	     }
 	     
+	     
+	     
+	    
 	    
 		}
 

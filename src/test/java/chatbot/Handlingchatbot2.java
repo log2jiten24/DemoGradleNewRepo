@@ -40,7 +40,7 @@ public class Handlingchatbot2 {
 	WebDriverWait wait = new WebDriverWait (driver,30); 
 	System.out.println ("waiting for frame ");
 	//explicit wait
-	wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.xpath("//iframe[contains(@style ,'height') and contains(@class ,'intercom')]")));
+	//wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.xpath("//iframe[contains(@style ,'height') and contains(@class ,'intercom')]")));
 	System.out.println ("frame found and switched ");
 	
 	Actions act = new Actions (driver);

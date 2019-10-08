@@ -2,42 +2,42 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="27194" started-at="2019-09-29T19:20:42Z" finished-at="2019-09-29T19:21:09Z">
+  <suite name="Suite" duration-ms="29576" started-at="2019-10-01T18:46:37Z" finished-at="2019-10-01T18:47:07Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="27194" started-at="2019-09-29T19:20:42Z" finished-at="2019-09-29T19:21:09Z">
+    <test name="Test" duration-ms="29576" started-at="2019-10-01T18:46:37Z" finished-at="2019-10-01T18:47:07Z">
       <class name="gradledemo.Gradledemoclass">
-        <test-method status="PASS" signature="launchbrowser()[pri:0, instance:gradledemo.Gradledemoclass@86ef470]" name="launchbrowser" is-config="true" duration-ms="4706" started-at="2019-09-29T19:20:42Z" description="launching of browser" finished-at="2019-09-29T19:20:46Z">
+        <test-method status="PASS" signature="launchbrowser()[pri:0, instance:gradledemo.Gradledemoclass@1cedb0e5]" name="launchbrowser" is-config="true" duration-ms="5396" started-at="2019-10-01T18:46:37Z" description="launching of browser" finished-at="2019-10-01T18:46:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method status="PASS" signature="launchbrowser()[pri:0, instance:gradledemo.Practicetest01@7f37593e]" name="launchbrowser" is-config="true" duration-ms="3612" started-at="2019-09-29T19:20:46Z" description="launching of browser" finished-at="2019-09-29T19:20:50Z">
+        <test-method status="PASS" signature="launchbrowser()[pri:0, instance:gradledemo.Practicetest01@3fc6d32]" name="launchbrowser" is-config="true" duration-ms="3809" started-at="2019-10-01T18:46:43Z" description="launching of browser" finished-at="2019-10-01T18:46:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method status="PASS" signature="openurl()[pri:1, instance:gradledemo.Gradledemoclass@86ef470]" name="openurl" duration-ms="2086" started-at="2019-09-29T19:20:50Z" description="open the url" finished-at="2019-09-29T19:20:52Z">
+        <test-method status="PASS" signature="openurl()[pri:1, instance:gradledemo.Gradledemoclass@1cedb0e5]" name="openurl" duration-ms="2720" started-at="2019-10-01T18:46:47Z" description="open the url" finished-at="2019-10-01T18:46:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openurl -->
-        <test-method status="PASS" signature="close()[pri:0, instance:gradledemo.Gradledemoclass@86ef470]" name="close" is-config="true" duration-ms="655" started-at="2019-09-29T19:21:08Z" description="close the browser" finished-at="2019-09-29T19:21:08Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:gradledemo.Gradledemoclass@1cedb0e5]" name="close" is-config="true" duration-ms="686" started-at="2019-10-01T18:47:06Z" description="close the browser" finished-at="2019-10-01T18:47:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="close()[pri:0, instance:gradledemo.Practicetest01@7f37593e]" name="close" is-config="true" duration-ms="708" started-at="2019-09-29T19:21:08Z" finished-at="2019-09-29T19:21:09Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:gradledemo.Practicetest01@3fc6d32]" name="close" is-config="true" duration-ms="688" started-at="2019-10-01T18:47:06Z" finished-at="2019-10-01T18:47:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- gradledemo.Gradledemoclass -->
       <class name="gradledemo.Practicetest01">
-        <test-method status="PASS" signature="openurl()[pri:1, instance:gradledemo.Practicetest01@7f37593e]" name="openurl" duration-ms="1833" started-at="2019-09-29T19:20:52Z" description="open the url" finished-at="2019-09-29T19:20:54Z">
+        <test-method status="PASS" signature="openurl()[pri:1, instance:gradledemo.Practicetest01@3fc6d32]" name="openurl" duration-ms="2023" started-at="2019-10-01T18:46:49Z" description="open the url" finished-at="2019-10-01T18:46:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openurl -->
-        <test-method status="PASS" signature="clickurl()[pri:2, instance:gradledemo.Practicetest01@7f37593e]" name="clickurl" duration-ms="5729" started-at="2019-09-29T19:20:54Z" description="search of testing " finished-at="2019-09-29T19:21:00Z">
+        <test-method status="PASS" signature="clickurl()[pri:2, instance:gradledemo.Practicetest01@3fc6d32]" name="clickurl" duration-ms="5700" started-at="2019-10-01T18:46:51Z" description="search of testing " finished-at="2019-10-01T18:46:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickurl -->
-        <test-method status="PASS" signature="clickonelement()[pri:3, instance:gradledemo.Practicetest01@7f37593e]" name="clickonelement" duration-ms="7833" started-at="2019-09-29T19:21:00Z" description="click on testing definition" finished-at="2019-09-29T19:21:08Z">
+        <test-method status="PASS" signature="clickonelement()[pri:3, instance:gradledemo.Practicetest01@3fc6d32]" name="clickonelement" duration-ms="8516" started-at="2019-10-01T18:46:57Z" description="click on testing definition" finished-at="2019-10-01T18:47:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickonelement -->

@@ -38,6 +38,10 @@ dependencies {
    // https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j-for image reading
     compile group: 'net.sourceforge.tess4j', name: 'tess4j', version: '4.2.1'
     
+    // Adding twillo API dependency for sending SMS otp code  
+    
+    //implementation group: "com.twilio.sdk", name: "twilio", version: "7.42.0"
+    
 }
 
 // In this section you declare where to find the dependencies of your project
@@ -45,6 +49,8 @@ repositories {
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+   //mavenLocal()
+   
 }
 
 //default gradle task
