@@ -24,9 +24,11 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -313,17 +315,17 @@ public class Reusablefunctions {
 	    	{
 	    	System.setProperty("webdriver.chrome.driver", "E:\\Drivers\\chromedriver.exe");
 	    
-	    	DesiredCapabilities capabilities = DesiredCapabilities.chrome() ;
+	    	//DesiredCapabilities capabilities = DesiredCapabilities.chrome() ;
 	    	ChromeOptions options = new ChromeOptions();
 	    	options.addArguments("disable-infobars");
 	    	options.addArguments("--disable-web-security");
 	    	options.addArguments("--allow-running-insecure-content");
-	    	capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+//	    	capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+//	    	
+//	    	capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 	    	
-	    	capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-	    	
-	    	driver = new ChromeDriver (capabilities);
-	    	//driver = new ChromeDriver(options);
+	    	//driver = new ChromeDriver (capabilities);
+	    	driver = new ChromeDriver(options);
 	    	
 	    	
 	    	
@@ -332,12 +334,14 @@ public class Reusablefunctions {
 	    	else if (browsername.equalsIgnoreCase("IE")) {
 	    	System.setProperty("webdriver.ie.driver", "E:\\Drivers\\IEDriverServer.exe");
 	    	
-	    	DesiredCapabilities capab = DesiredCapabilities.internetExplorer();
-	    	capab.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
-	    	capab.setCapability(InternetExplorerDriver.ENABLE_PERSISTENT_HOVERING, false);
-	    	capab.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
-	    	capab.setCapability(InternetExplorerDriver.NATIVE_EVENTS, false);
-	    	driver = new InternetExplorerDriver(capab);
+	    	//DesiredCapabilities capab = DesiredCapabilities.internetExplorer();
+	    	InternetExplorerOptions ioptions = new InternetExplorerOptions();
+	    	ioptions.setAcceptInsecureCerts(true);
+//	    	capab.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+//	    	capab.setCapability(InternetExplorerDriver.ENABLE_PERSISTENT_HOVERING, false);
+//	    	capab.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
+//	    	capab.setCapability(InternetExplorerDriver.NATIVE_EVENTS, false);
+	    	driver = new InternetExplorerDriver(ioptions);
 	    	}
 	    	else {
 	    		Assert.assertTrue("Invalid Browser", false);
@@ -347,8 +351,34 @@ public class Reusablefunctions {
 	     }
 	     
 	     
-	     
+	   //take Screenshot of particular WebElement 
+		 	public static void takeWebElementScreenshot(WebElement element, String filename)  {
+				
+				File srcFile = element.getScreenshotAs(OutputType.FILE);
+				
+				try {
+					FileUtils.copyFile(srcFile, new File("./Screenshots/" + filename + ".png"));
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+		}
 	    
+		 	//take Screenshot of particular WebElement -2nd way 
+			public static void captureWebElementScreenshot (WebElement element , String fileName ) {
+				
+				TakesScreenshot ts = ((TakesScreenshot)element) ;
+				File srcfile = ts.getScreenshotAs(OutputType.FILE);
+				try {
+					FileUtils.copyFile(srcfile, new File ("./Screenshots/" + fileName +".png"));
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			}
+
 	    
 		}
 

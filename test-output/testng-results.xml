@@ -1,33 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20988" started-at="2019-09-29T19:15:40Z" finished-at="2019-09-29T19:16:01Z">
+  <suite name="Default suite" duration-ms="22497" started-at="2019-10-18T19:47:02Z" finished-at="2019-10-18T19:47:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20988" started-at="2019-09-29T19:15:40Z" finished-at="2019-09-29T19:16:01Z">
-      <class name="gradledemo.Practicetest01">
-        <test-method status="PASS" signature="launchbrowser()[pri:0, instance:gradledemo.Practicetest01@3c0ecd4b]" name="launchbrowser" is-config="true" duration-ms="4642" started-at="2019-09-29T19:15:40Z" description="launching of browser" finished-at="2019-09-29T19:15:45Z">
+    <test name="Default test" duration-ms="22497" started-at="2019-10-18T19:47:02Z" finished-at="2019-10-18T19:47:24Z">
+      <class name="javaconcepts.WorkonAotherwindow">
+        <test-method status="PASS" signature="launchbrowser()[pri:0, instance:javaconcepts.WorkonAotherwindow@3f49dace]" name="launchbrowser" is-config="true" duration-ms="7710" started-at="2019-10-18T19:47:02Z" description="launching of browser" finished-at="2019-10-18T19:47:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method status="PASS" signature="openurl()[pri:1, instance:gradledemo.Practicetest01@3c0ecd4b]" name="openurl" duration-ms="1955" started-at="2019-09-29T19:15:45Z" description="open the url" finished-at="2019-09-29T19:15:47Z">
+        <test-method status="PASS" signature="openurlandlogin()[pri:1, instance:javaconcepts.WorkonAotherwindow@3f49dace]" name="openurlandlogin" duration-ms="14751" started-at="2019-10-18T19:47:09Z" description="open the url and switch to another window" finished-at="2019-10-18T19:47:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openurl -->
-        <test-method status="PASS" signature="clickurl()[pri:2, instance:gradledemo.Practicetest01@3c0ecd4b]" name="clickurl" duration-ms="5662" started-at="2019-09-29T19:15:47Z" description="search of testing " finished-at="2019-09-29T19:15:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickurl -->
-        <test-method status="PASS" signature="clickonelement()[pri:3, instance:gradledemo.Practicetest01@3c0ecd4b]" name="clickonelement" duration-ms="8008" started-at="2019-09-29T19:15:53Z" description="click on testing definition" finished-at="2019-09-29T19:16:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickonelement -->
-        <test-method status="PASS" signature="close()[pri:0, instance:gradledemo.Practicetest01@3c0ecd4b]" name="close" is-config="true" duration-ms="696" started-at="2019-09-29T19:16:01Z" finished-at="2019-09-29T19:16:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- gradledemo.Practicetest01 -->
+        </test-method> <!-- openurlandlogin -->
+      </class> <!-- javaconcepts.WorkonAotherwindow -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
