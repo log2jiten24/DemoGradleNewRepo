@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="gradledemo.Gradledemoclass" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-01T18:46:47" hostname="DESKTOP-E1E9EHH" time="2.72">
+<testsuite name="gradledemo.Gradledemoclass" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-18T13:23:26" hostname="DESKTOP-E1E9EHH" time="1.979">
   <properties/>
-  <testcase name="openurl" classname="gradledemo.Gradledemoclass" time="2.72"/>
+  <testcase name="openurl" classname="gradledemo.Gradledemoclass" time="1.979"/>
   <system-out><![CDATA[Screenshots taken
 Screenshot captured while opening google page
 driver title capture :Google
